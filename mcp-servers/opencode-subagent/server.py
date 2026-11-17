@@ -65,7 +65,7 @@ def _short(value, limit=160):
 
 
 def run_task(prompt, cwd=None, model=None, agent=None, session_id=None,
-             timeout=None, show_in_gui=False, title=None):
+             timeout=None, show_in_gui=True, title=None):
     if not prompt or not str(prompt).strip():
         return {"ok": False, "error": "prompt is empty"}
     cwd = os.path.expanduser(cwd or os.getcwd())
@@ -185,7 +185,7 @@ TASK_PROPS = {
     "agent": {"type": "string", "enum": AGENTS, "description": "plan (default): cannot edit files. explore: fast search (grep/glob/shell). general: multi-step research and tasks, can edit. build: full access, can edit files and run commands."},
     "session_id": {"type": "string", "description": "Continue an earlier OpenCode session (from a previous result)."},
     "timeout": {"type": "integer", "description": f"Seconds before giving up (default {DEFAULT_TIMEOUT})."},
-    "show_in_gui": {"type": "boolean", "description": "Keep the session visible in the OpenCode app's session list (default false: archived)."},
+    "show_in_gui": {"type": "boolean", "description": "Keep the session visible in the OpenCode app's session list (default true). Pass false to archive it (hidden from the app)."},
     "title": {"type": "string", "description": "Session title shown in OpenCode."},
 }
 

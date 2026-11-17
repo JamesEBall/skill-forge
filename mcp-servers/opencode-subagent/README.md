@@ -16,7 +16,7 @@ Standard library Python only.
 - `build`: full access.
 
 Nothing is auto-approved: the server never passes `--auto`.
-Sessions are archived (hidden from the OpenCode app) unless `show_in_gui` is true.
+Sessions show in the OpenCode app by default. Pass `show_in_gui: false` to archive a session (hidden from the app).
 
 ## Config (environment variables)
 - `OPENCODE_BIN`: path to the CLI. Default: the newest CLI bundled with OpenCode.app.
