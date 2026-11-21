@@ -8,6 +8,7 @@ My skills and MCP servers for Claude Code, in one repo.
 | --- | --- | --- |
 | [unslop](skills/unslop/SKILL.md) | Rewrites text so it stops reading like AI output, using rules distilled from Wikipedia's "Signs of AI writing" page. | Mine |
 | [overleaf-olcli](skills/overleaf-olcli/SKILL.md) | Drives Overleaf projects from the terminal with the `olcli` CLI: pull, push, sync, compile, comments. | Mine. The CLI itself is [aloth/olcli](https://github.com/aloth/olcli) (MIT) and is not included here. |
+| [adb-style](skills/adb-style/SKILL.md) | Reviews a draft against the Asian Development Bank *Handbook of Style and Usage* (2024 edition) and rewrites it to comply. Comes with reference lists (member names, currencies, abbreviations, citation models) and a small regex linter. | Mine. The rules are condensed from [ADB's handbook](https://www.adb.org/sites/default/files/institutional-document/31385/hsu-2024.pdf), which is not included here. |
 
 ## MCP servers
 
